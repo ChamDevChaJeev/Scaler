@@ -1,0 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package factorial;
+
+/**
+ *
+ * @author devika
+ */
+public class FactorialRecurssion {
+    public static void main(String[] args){
+    int num=5;
+    System.out.println("The factorial of "+num+" = "+factrec(num));
+    
+    }
+    public static int factrec(int num){
+        if(num<=1){
+        return 1;
+        }
+    return num*factrec(num-1); 
+    }
+}
